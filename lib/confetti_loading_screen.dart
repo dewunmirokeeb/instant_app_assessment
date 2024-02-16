@@ -29,7 +29,7 @@ class _ConfettiLoadingScreenState extends State<ConfettiLoadingScreen> {
         final latestVersion = packageInfo['latest']['version'];
         if (kDebugMode) {
           print('Downloaded Confetti package version: $latestVersion');
-          print(packageInfo["content"]);
+          print(packageInfo);
         }
       } else {
         if (kDebugMode) {
