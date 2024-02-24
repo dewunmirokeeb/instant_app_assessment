@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_eval/flutter_eval.dart';
 import 'package:flutter_eval/widgets.dart';
-import 'package:dart_eval/dart_eval_bridge.dart';
 
 void main() {
   runApp(
@@ -38,13 +37,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -52,11 +45,6 @@ class _MyHomePageState extends State<MyHomePage> {
       id: '#myapp_main_scaffold_1',
       args: [
         $BuildContext.wrap(context),
-        _counter,
-        $Function((runtime, target, args) {
-          _incrementCounter();
-          return null;
-        })
       ],
       childBuilder: (context) => const Scaffold(
         body: Center(
