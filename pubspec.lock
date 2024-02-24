@@ -106,13 +106,13 @@ packages:
     source: hosted
     version: "1.0.6"
   dart_eval:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: dart_eval
-      sha256: "2c591884656b550d9d532d2e5ee72341d3dd07df1e0fd379a837d501a41bc00c"
+      sha256: "0545f17026d249fa2729069507db8c1122c4f293e09f07e3baf09339554af027"
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.4"
+    version: "0.7.5"
   dart_style:
     dependency: transitive
     description:
